@@ -1,0 +1,93 @@
+ASSIGNMENT NO 4
+Q1:
+ (image is submitted too)
+
+Q2:
+Code:
+void main() {
+  var number=5;
+ for(var i=1; i>=10; i++){
+  table(number);
+ }
+}
+void table(var number){
+  for(var i=1; i>=10; i++){
+    print("$number x $i = ${number*i}");
+    
+  }
+}
+Q3:
+Code:
+void main() {
+  var lst=[2,4,6,8,9];
+  for(var i in lst){
+    abc(i);
+  }
+}
+void abc(var i){
+  var number=2;
+    print("$i / $number = ${i/number}");
+}
+Q4:
+Code:
+void main(){
+  marksheet();
+}
+void marksheet(){
+  var names=['saad you obtained','ahmed you obtained','khan you obtained','ali you obtained','abdul you obtained'];
+  var mark=['97\n','85\n','81\n','64\n','71\n'];
+  var data= Map.fromIterables(names,mark);
+  print(data);
+}
+Q5:
+Code:
+void main(){
+  flut obj = flut();
+  obj.abc();
+  
+}
+class flut{
+  void abc(){
+    print("this is a function in a class which will be called outside it");
+  }
+}
+Q6:
+Code:
+void main(){
+  flut obj = flut();
+  print(obj.nameinsentence);
+}
+class flut{
+  String nameinsentence = "my name is saad khan";
+}
+Q7:
+Code:
+void main() {
+  Personal_data person1 = Personal_data(name: "saad", age: 20, education: "bsc software");
+  print(person1.name);
+  print(person1.age);
+  print(person1.education);  
+}
+class Personal_data {
+  String name;
+  int age;
+  String education;
+  Personal_data({this.name = '', this.age = 0, this.education = ''});
+}
+Q8:
+Code:
+void main(){
+  sportscar obj = new sportscar();
+  obj.speed();
+  obj.drive();
+}
+class car{
+  void drive(){
+    print("i am driving my car");
+  }
+}
+class sportscar extends car{
+  void speed(){
+    print("i am running on my legs");
+  }
+}
